@@ -1,0 +1,124 @@
+@import "./partials/variables";
+@import "./partials/global-styles";
+.box24{
+    display: flex;
+    align-self:baseline;
+    flex-flow:column-reverse wrap-reverse;
+    place-content: space-between center;
+}
+.container{
+    display: flex;
+    max-width: 1300px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1rem;
+    button{
+        border: none;
+        cursor: pointer;
+        padding: .4rem 1rem;
+        outline: none;
+        border-radius: 8px;
+        font-size: 1.10rem;
+
+    }
+    p{
+        color: white;
+    }
+    pre{
+        color:black;
+    }
+    .code-area{
+        background-color: #43A047;
+        padding: 2rem;
+        width: 50%;
+        .flexbox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            .p{
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            .levels{
+                display: flex;
+                gap: .50rem;
+                justify-content: center;
+                align-items: center;
+                .one{
+                    font-size: 1.50rem;
+                }
+               
+            }
+        }
+        .instructions{
+            margin-bottom: 2rem;
+        }
+        .codes{
+            display: flex;
+            .numbers{
+                background-color:#999999 ;
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .code-space{
+                background-color: gainsboro;
+                width: 100%;
+                padding: 1rem;
+                position: relative;
+                textarea{
+                    position: absolute;
+                    top: 5rem;
+                    border: none;
+                    outline: none;
+                    background-color: white;
+                    width: 95%;
+                }
+                .next{
+                    display: flex;
+                    justify-content: end;
+                    .nexty{
+                        background-color: red;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .preview-area{
+        width: 50%;
+        background-color: #1F5768;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .icons{
+            height: 20%;
+            width: 100%;
+            .icon{
+                width: 97%;
+                // display: flex;
+                // justify-content: end;
+                img{
+                    width: 100px;
+                    margin-top: 1rem;
+                    z-index: 999;
+                }
+            }
+            .circle{
+                background-color: white;
+                color: white;
+                height: 10%;
+                width: 10%;
+                padding: 5rem;
+                clip-path: circle(50% at 50% 50%);
+                position: absolute;
+                right: 10rem;
+                top: 1.30rem;
+                position: fixed;
+            }
+        }
+        
+    }
+}
