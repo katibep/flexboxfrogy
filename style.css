@@ -20,6 +20,15 @@
   margin: 0 auto;
   padding: 1rem;
 }
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    background-color: #43A047;
+  }
+}
 .container button {
   border: none;
   cursor: pointer;
@@ -28,16 +37,38 @@
   border-radius: 8px;
   font-size: 1.1rem;
 }
+@media (max-width: 768px) {
+  .container button {
+    padding: 0.2rem 0.5rem;
+    font-size: small;
+  }
+}
 .container p {
   color: white;
 }
+@media (max-width: 768px) {
+  .container p {
+    font-size: small;
+  }
+}
 .container pre {
   color: black;
+}
+@media (max-width: 768px) {
+  .container pre {
+    font-size: small;
+  }
 }
 .container .code-area {
   background-color: #43A047;
   padding: 2rem;
   width: 50%;
+}
+@media (max-width: 768px) {
+  .container .code-area {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 .container .code-area .flexbox {
   display: flex;
@@ -45,9 +76,19 @@
   align-items: center;
   margin-bottom: 2rem;
 }
+@media (max-width: 768px) {
+  .container .code-area .flexbox {
+    margin-bottom: 0.4rem;
+  }
+}
 .container .code-area .flexbox .p {
   font-size: 2rem;
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .container .code-area .flexbox .p {
+    font-size: 1rem;
+  }
 }
 .container .code-area .flexbox .levels {
   display: flex;
@@ -58,8 +99,18 @@
 .container .code-area .flexbox .levels .one {
   font-size: 1.5rem;
 }
+@media (max-width: 768px) {
+  .container .code-area .flexbox .levels .one {
+    font-size: 1rem;
+  }
+}
 .container .code-area .instructions {
   margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .container .code-area .instructions {
+    margin-bottom: 1rem;
+  }
 }
 .container .code-area .codes {
   display: flex;
@@ -70,11 +121,21 @@
   flex-direction: column;
   padding: 1rem;
 }
+@media (max-width: 768px) {
+  .container .code-area .codes .numbers {
+    padding: 0.5rem;
+  }
+}
 .container .code-area .codes .code-space {
   background-color: gainsboro;
   width: 100%;
   padding: 1rem;
   position: relative;
+}
+@media (max-width: 768px) {
+  .container .code-area .codes .code-space {
+    width: 100%;
+  }
 }
 .container .code-area .codes .code-space textarea {
   position: absolute;
@@ -83,6 +144,12 @@
   outline: none;
   background-color: white;
   width: 95%;
+}
+@media (max-width: 768px) {
+  .container .code-area .codes .code-space textarea {
+    width: 80%;
+    top: 4rem;
+  }
 }
 .container .code-area .codes .code-space .next {
   display: flex;
@@ -100,17 +167,33 @@
   justify-content: space-between;
   position: relative;
 }
+@media (max-width: 768px) {
+  .container .preview-area {
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+}
 .container .preview-area .icons {
   height: 20%;
   width: 100%;
 }
 .container .preview-area .icons .icon {
   width: 97%;
+  display: flex;
+  justify-content: end;
 }
 .container .preview-area .icons .icon img {
   width: 100px;
   margin-top: 1rem;
   z-index: 999;
+}
+@media (max-width: 768px) {
+  .container .preview-area .icons .icon img {
+    width: 30px;
+  }
 }
 .container .preview-area .icons .circle {
   background-color: white;
@@ -124,4 +207,13 @@
   right: 10rem;
   top: 1.3rem;
   position: fixed;
+}
+@media (max-width: 768px) {
+  .container .preview-area .icons .circle {
+    padding: 2rem;
+    height: 10%;
+    width: 10%;
+    right: 2rem;
+    top: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
