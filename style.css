@@ -182,8 +182,6 @@
 }
 .container .preview-area .icons .icon {
   width: 97%;
-  display: flex;
-  justify-content: end;
 }
 .container .preview-area .icons .icon img {
   width: 100px;
