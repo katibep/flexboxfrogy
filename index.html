@@ -13,14 +13,29 @@
             <div class="flexbox">
                 <p class="p">Flexbox Froggy</p>
                 <div class="levels">
-                    <button>prev</button>
-                    <p class="one">1</p>
-                    <button>next</button>
+                    <button id="prevBtn">prev</button>
+                    <p id="level" class="one">1</p>
+                    <button id="nextBtn">next</button>
                 </div>
             </div>
-            <div class="instructions">
+            <div id="instructions-container" class="instructions">
                 <p>Welcome to Flexbox Froggy, a game where you help Froggy and friends by writing CSS code! Guide this frog to the lilypad on the right by using the justify-content property, which aligns items horizontally and accepts the following values:</p>
+               
             </div>
+            <!-- <div class="bulets">
+                <p><i class='bx bx-check'></i>
+                    flex-end: Items align to the right side of the container.
+                </p>
+                <p><i class='bx bx-check'></i>
+                    center: Items align at the center of the container.
+                </p>
+                <p><i class='bx bx-check'></i>
+                    space-between: Items display with equal spacing between them
+                </p>
+                <p><i class='bx bx-check'></i>
+                    space-around: Items display with equal spacing around them
+                </p>
+            </div> -->
             <div class="codes">
                 <div class="numbers">
                     <p>1</p>
@@ -47,13 +62,13 @@
 <textarea name="" id=""></textarea>
                       </pre>
                     </code>
-                    <div class="next"><button class="nexty">next</button></div>
+                    <div class="next"><button id="nextBtn" class="nexty">next</button></div>
                   </div>
             </div>
         </div>
         <div class="preview-area">
             <div class="icons">
-            <div class="icon"><img src="./images/frog.png" alt=""></div>
+            <div id="pond" class="icon"><img src="./images/frog.png" alt=""></div>
             <div class="circle">ht</div>
             </div>
             

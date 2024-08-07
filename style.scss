@@ -11,7 +11,6 @@
     max-width: 1300px;
     height: 100vh;
     margin: 0 auto;
-    padding: 1rem;
     @media(max-width:768px){
       display: flex;
       flex-direction:column-reverse;
@@ -82,10 +81,16 @@
             }
         }
         .instructions{
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             @media(max-width:768px){
                 margin-bottom: 1rem;
             }
+        }
+        .bulets{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1rem;
         }
         .codes{
             display: flex;
